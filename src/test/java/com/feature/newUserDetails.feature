@@ -1,3 +1,4 @@
+@ignore
 Feature: Check user details by API
 
 Background:
