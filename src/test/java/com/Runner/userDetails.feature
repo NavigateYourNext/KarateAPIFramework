@@ -1,7 +1,7 @@
 Feature: Check user details by API
 
 Background:
-      Given url 'https://reqres.in'
+      Given url url
       Given header Content-Type = 'application/json'
 	
 Scenario: Get list of all countries
@@ -14,4 +14,8 @@ Scenario: Get list of all countries
      And def expectedOutput = read('result.json')
      And match response == expectedOutput
 	 And print response
-	 And match response.data.id == 2
+	 
+	 
+	 And match response.data.id == 2 
+	 
+	 Then print abc
